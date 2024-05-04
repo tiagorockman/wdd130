@@ -1,0 +1,89 @@
+* { margin: 0; padding: 0; }
+/* Note que simplesmente zeramos a margem e a margem interna (padding) de todos os elementos do DOM.
+ Isso faz com que o comportamento seja o mesmo em qualquer navegador, algo essencial para a responsividade. */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+}
+
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+/* esconder todos os “inputs”, fazendo com que somente o label apareça. */
+.slider input {
+    display: none;
+}
+
+/* Na sequência, fazemos a definição do estilo que nossos labels terão: como botões na cor preta e no canto inferior esquerdo das imagens.
+ Isso é definido de forma relativamente simples, como podemos observar na Listagem 4. Como podemos notar, 
+ fizemos uso de alguns itens bem interessantes do CSS, como o nth_child(n), para buscar o primeiro, 
+ segundo e terceiro filhos de uma determinada classe ou elemento. */
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+/* Navegação */
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: black;
+    color: white;
+  }
