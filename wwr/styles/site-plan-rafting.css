@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 :root {
     --primary-color: #003049;
@@ -14,7 +15,6 @@
     --nav-hover-background-color: #eae2b7;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 
 body {
     font-family: var(--paragraph-font);
