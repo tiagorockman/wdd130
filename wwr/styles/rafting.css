@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --primary-color: #003049;
+    --secondary-color: #FCBF49;
+    --accent1-color: #EAE2B7;
+    --accent2-color: #F77F00;
+
+    --heading-font: 'Oswald', sans-serif;
+    --paragraph-font: 'Oswald', sans-serif;
+
+    --nav-background-color: #EAE2B7;
+    --nav-link-color: #e36414;
+    --nav-hover-link-color: #dda15e;
+    --nav-hover-background-color: #eae2b7;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+
+.hero {
+    margin: 10px auto;
+    width: 960px;
+    position: relative;
+}
+
+.heroimage {
+    position: absolute;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: relative;
+}
+
+article {
+ position: absolute;
+ background-color: var(--nav-background-color);
+ opacity: 79%;
+ font-size: 18px;
+}
+
+article img {
+    float: right;
+    width: 200px;
+    padding: 30px;
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p{
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited{
+    color: var(--nav-link-color);
+}
+
+nav a:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.sociallinks {
+    text-decoration: none;
+}
+
+.sociallinks img {
+
+    max-width: 20%;
+}
+
+.history {
+    position: relative;
+    margin-top: 65%;
+}
+
+section img {
+    position: relative;
+    display: block;
+    height: auto;
+}
+
+footer {
+    position: relative;
+}
