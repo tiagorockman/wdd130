@@ -13,12 +13,14 @@
     --nav-link-color: #e36414;
     --nav-hover-link-color: #dda15e;
     --nav-hover-background-color: #eae2b7;
+    --max-width: 960px
 }
 
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
+    max-width: var(--max-width);
     padding: 20px;
+    margin: 0 auto;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -29,8 +31,19 @@ h1,h2,h3,h4,h5,h6 {
 header {
     padding: 20px;
     background-color: var(--accent1-color);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 20% 40%;
+    justify-content: space-evenly;
 }
 
+header img {
+    border-radius: 50%;
+}
+
+header nav a{
+    font-size: 2rem;
+}
 
 .hero {
     margin: 10px auto;
@@ -48,6 +61,11 @@ header {
 
 .hero h1 {
     position: relative;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
 }
 
 article {
@@ -61,15 +79,6 @@ article img {
     float: right;
     width: 200px;
     padding: 30px;
-}
-
-header {
-    padding: 20px;
-    background-color: var(--accent1-color);
-}
-
-p{
-    padding: 25px;
 }
 
 nav {
@@ -94,26 +103,63 @@ nav a:hover{
     background-color: var(--nav-hover-background-color);
 }
 
-.sociallinks {
-    text-decoration: none;
-}
-
-.sociallinks img {
-
-    max-width: 20%;
-}
 
 .history {
     position: relative;
     margin-top: 65%;
 }
 
+.history img{
+    width: 270px;
+}
+
+.history p{
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 2fr 4fr;
+    text-align: justify;
+    align-items: center;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section .figures {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+
+.figures figcaption{
+    text-align: center;
+}
+
 section img {
     position: relative;
     display: block;
-    height: auto;
+    height: 134px;
+    width: 200px;
 }
 
 footer {
-    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--nav-background-color);
+    align-items: center;
+}
+
+footer .center-text{
+    justify-content: center;
+    width: 300px;
+}
+
+footer nav{
+    width: 16rem;
+    margin-left: 7rem;
+}
+
+footer img {
+    max-width: 3rem;
+    max-height: 3rem;
 }
