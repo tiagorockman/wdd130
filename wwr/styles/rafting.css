@@ -103,6 +103,10 @@ nav a:hover{
     background-color: var(--nav-hover-background-color);
 }
 
+article p{
+    padding: 1rem;
+    text-align: justify;
+}
 
 .history {
     position: relative;
