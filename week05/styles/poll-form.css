@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.2em;
+  font-style: normal;
+  color: #333;
+  background: #fff;
+}   
+
+h1{
+    padding: 10px;
+    text-align: center;
+}
+
+form{
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset{
+    display: grid;
+    grid-gap: 1rem;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+input, select{
+    padding: .5rem;
+    height: 2.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+input[type="checkbox"]{
+    vertical-align: bottom;
+}
+
+button{
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color: darkgreen;
+}
+
+footer{
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
+.form-item{
+    display: grid;
+    align-items:  center
+}
+
+.column1{
+    grid-template-columns: 3fr 1fr;
+    margin: 0.3rem 0;
+}
+
+.column2{
+    grid-template-columns: 1fr 2fr;
+    margin: 0.3rem 0;
+}
+
+textarea {
+    font-size: 1.2rem;
+}

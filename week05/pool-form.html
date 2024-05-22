@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WDD 130 | HTML - Form - User Pool</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | Tiago Neves Sousa | HTML - Form - User Pool</h1>
+    </header>
+    <main>
+        <form>
+           <fieldset>
+            <legend>Contact Information</legend>
+            <div class="form-item column2">
+                <label for="fullname">Full Name:</label>
+                <input type="text" name="fullname" id="fullname">
+            </div>
+           <div class="form-item column2">
+            <label for="useremail">Email:</label>
+            <input type="email" id="useremail" name="useremail">
+           </div>
+           </fieldset>
+           <fieldset>
+            <legend>Questions</legend>
+            <div class="form-item column1">
+                <label for="browser"> What is your favorite browser? </label>
+                <select id="browser" name="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="safari">Safari</option>
+                    <option value="edge">Edge</option>
+                    <option value="brave">Brave</option>
+                    <option value="other">other</option>
+                </select>
+            </div>
+            <div class="form-item column1">
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet">            
+            </div>
+            <label for="feedback">List the places you have lived:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Ponte Nova, Rio Grande do Norte, Paraíba, Belo Horizonte"></textarea>
+           </fieldset>
+           <button type="submit" id="submit" name="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>©2024 / HTML - Form - User PoolNetGU / Tiago Neves</p>
+    </footer>
+</body>
+</html>
