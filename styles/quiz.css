@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+  font-family: "Noto Serif", serif;
+  font-size: 1em;
+  font-style: normal;
+  color: #333;
+  background: #fff;
+}   
+
+h1{
+    padding: 10px;
+    text-align: center;
+}
+
+form{
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset{
+    display: grid;
+    grid-gap: 1rem;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+label{
+    font-size: 1rem;
+}
+
+input, select{
+    padding: .5rem;
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+
+input[type="radio"], input[type="checkbox"]{
+   /* -ms-transform: scale(1.5);*/ /* IE 9 */
+    /*-webkit-transform: scale(1.5); *//* Chrome, Safari, Opera */
+    transform: scale(1.5);
+    margin-left: 3rem;
+}
+
+button{
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color: rgb(54, 148, 235);
+}
+
+footer{
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
+.form-item{
+    display: grid;
+    align-items:  center
+}
+
+.question{
+    font-weight: bold;
+}
+
+textarea{
+    margin: 1rem;
+}

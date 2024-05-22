@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WDD 130 | HTML - CSS - Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | Tiago Neves Sousa | HTML - CSS - Quiz</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Questions HTML and CSS Quiz</legend>
+                <div class="form-item">
+                    <label class="question" for="q1">What is the first tag added in a HTML page to help the bowse recognize the page?</label>
+                    <input type="text" name="q1" id="q1">
+                </div>
+
+                <div class="form-item">
+                    <label class="question" for="q2">How are id and class selected in CSS?</label>
+                    <textarea name="q2" id="q2" rows="4"></textarea>
+                </div>
+
+                <div class="form-item">
+                    <label for="q3" class="question">How can you specify a margin around an element in CSS?</label>
+                    <select id="q3" name="q3">
+                        <option value="">Choose one option...</option>
+                        <option value="op1">Using the `margin` property</option>
+                        <option value="op2">Using the `space` property </option>
+                        <option value="op3">Using the `padding` property</option>
+                        <option value="all">All of the above</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <label class="question">With CSS property is used to define the background color of an element?</label>
+                    <label>color
+                        <input type="radio" id="color" name="q4" value="color">
+                    </label>
+                    <label>background-color 
+                        <input type="radio" id="background-color" name="q4" value="background-color" checked>
+                    </label>
+                    <label>background
+                        <input type="radio" id="background" name="q4" value="background">
+                    </label>                   
+                    <label>bgcolor
+                        <input type="radio" id="bgcolor" name="q4" value="bgcolor">
+                    </label>
+                </div>
+
+                <div class="form-item">
+                    <label class="question"> Which of the following are ways to create a hyperlink in HTML? (Choose all that
+                        apply)</label>
+                  
+                    <label>tag [a] with href attribute
+                        <input type="checkbox" id="checka" name="q5" value="a" checked>
+                    </label>
+                    
+                    <label> tag [link] with url attribute
+                        <input type="checkbox" id="checkb" name="q5" value="b">
+                    </label>
+                    
+                    <label for="checkc"> tag [hyperlink] 
+                        <input type="checkbox" id="checkc" name="q5" value="c">
+                    </label>
+                  
+                    <label for="checkd">tag [anchor] with href attribute
+                        <input type="checkbox" id="checkd" name="q5" value="d" checked>
+                    </label>
+                </div>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Submit</legend>
+                <button type="submit" id="submit" name="submit">Submit Answer</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>©2024 / HTML - CSS - Quiz / Tiago Neves</p>
+    </footer>
+</body>
+
+</html>
