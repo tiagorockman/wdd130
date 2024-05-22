@@ -89,3 +89,14 @@ footer{
 textarea{
     margin: 1rem;
 }
+
+.div-tip{
+    background-color: #3f3f3f;
+    color: #ccc;
+    padding: 1rem;
+    width: 50%;
+    margin: 0 auto;
+}
+.div-tip p {
+    text-align: center;
+}
