@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #003049;
+    --primary-hover-color: #088fd8;
     --secondary-color: #FCBF49;
     --accent1-color: #EAE2B7;
     --accent2-color: #F77F00;
@@ -166,4 +167,88 @@ footer nav{
 footer img {
     max-width: 3rem;
     max-height: 3rem;
+}
+
+
+.comp-information{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 35% 40%;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+}
+
+.information img {
+    width: 20px;
+    height: 20px;
+    float: left;
+    padding-right: .8rem;
+}
+
+.information div{
+    padding: 10px;
+}
+
+hr{
+    margin: 30px 0px;
+    border: 1px solid #7e8183;
+}
+
+form{
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #eee;
+}
+
+.inside-form{
+    margin-left: 20%;
+}
+
+
+label{
+    font-size: 1rem;
+}
+
+input{
+    padding: .5rem;
+    margin: 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.label-above {
+    display: flex;
+    flex-direction: row;
+}
+.message-radio{
+    margin-left: 5rem;
+}
+
+.message label{
+    padding: 2rem;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    /* -ms-transform: scale(1.5);*/ /* IE 9 */
+     /*-webkit-transform: scale(1.5); *//* Chrome, Safari, Opera */
+     transform: scale(1.5);
+     margin-left: 3rem;
+ }
+
+ button{
+    margin: 1rem;
+    background-color:  var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+button:hover{
+    background-color: var(--primary-hover-color);
 }
