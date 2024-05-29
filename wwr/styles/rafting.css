@@ -228,9 +228,21 @@ input{
     margin-left: 5rem;
 }
 
-.message label{
-    padding: 2rem;
+.message {
+    margin: 0 5rem;
 }
+
+.message textarea{
+    width: 80%;
+    border-radius: 10px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+
 
 input[type="radio"], input[type="checkbox"]{
     /* -ms-transform: scale(1.5);*/ /* IE 9 */
