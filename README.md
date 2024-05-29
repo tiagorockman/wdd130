@@ -18,3 +18,6 @@ Activities from BYU Idaho Software Development BS
 
 - BYU - Web Fundamentals - Tools
     - https://byui-cse.github.io/wdd130-ww-course/resources/frontend-resources.html
+
+- Career Roadmap
+    - https://roadmap.sh
