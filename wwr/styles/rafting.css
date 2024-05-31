@@ -140,6 +140,12 @@ section .figures {
     text-align: center;
 }
 
+.section-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 section img {
     position: relative;
     display: block;
@@ -264,3 +270,37 @@ input[type="radio"], input[type="checkbox"]{
 button:hover{
     background-color: var(--primary-hover-color);
 }
+
+.tbimage{
+    width: 200px;
+    padding: 1rem;
+}
+
+.trip-button{
+    height: 2rem;
+    font-size: 1rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.inline-details{
+    display: flex;
+    align-items: center;
+}
+
+td h3{
+    text-align: center;
+}
+
+td p{
+    padding: .5rem;
+}
+
+.trip-details {
+    font-size: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+} 
